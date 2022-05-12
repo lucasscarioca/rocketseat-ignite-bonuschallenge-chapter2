@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 
-import Header from '../../components/Header';
+import { Header } from '../../components/Header';
 import api from '../../services/api';
 import { Food } from '../../components/Food';
-import ModalAddFood from '../../components/ModalAddFood';
-import ModalEditFood from '../../components/ModalEditFood';
+import { ModalAddFood } from '../../components/ModalAddFood';
+import { ModalEditFood } from '../../components/ModalEditFood';
 import { FoodsContainer } from './styles';
 import { Foods } from '../../types';
 
-export function DashBoard() {
+export function Dashboard() {
 
   const [foods, setFoods] = useState<Foods[]>([]);
   const [editingFood, setEditingFood] = useState<Foods>({} as Foods);
