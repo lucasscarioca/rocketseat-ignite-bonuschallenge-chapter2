@@ -7,8 +7,8 @@ import { Foods } from '../../types';
 
 interface FoodProps {
   food: Foods,
-  handleEditFood: (food: Object) => void,
-  handleDelete: (id: Number) => void,
+  handleEditFood: (food: Foods) => void,
+  handleDelete: (id: Number) => Promise<void>,
 }
 
 export function Food({ food, handleEditFood, handleDelete }: FoodProps) {
